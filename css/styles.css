@@ -37,3 +37,12 @@
 .navbar-dark{
 	background-color: #512DA8;
 }
+
+.btn-sm {
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    width:80%;    //Specify your width here
+    color: black;
+}
+
