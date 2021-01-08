@@ -83,6 +83,112 @@
         </div>
     </div>
 
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a table</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row offset-1">
+                            <label for="optradio" class="col-12 col-sm-2 col-xs-12 col-form-label"><strong>Number of Guests</strong></label>
+                            
+                                <div class="col-12 col-sm-10">
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio">1
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio">2
+                                  </label>
+                                </div>
+                                <div class="form-check-inline disabled">
+                                  <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio">3
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio">4
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio">5
+                                  </label>
+                                </div>
+                                <div class="form-check-inline disabled">
+                                  <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio">6
+                                  </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row offset-1">
+                            <label for="smoke" class="col-12 col-sm-2 col-xs-12 col-form-label"><strong>Section</strong></label>
+
+                            <!-- <div class="btn-group col-12 col-sm-10" data-toggle="buttons">
+
+                                <div class="btn form-check-inline">
+                                  <label class="form-check-label btn-success active">
+                                    <input type="radio" class="form-check-input" name="smoke" checked="checked">Non-Smoking
+                                  </label>
+                                </div>
+
+                                <div class="btn form-check-inline ">
+                                  <label class="form-check-label btn-danger">
+                                    <input type="radio" class="form-check-input" name="smoke">Smoking
+                                  </label>
+                                </div>
+                            </div> -->
+
+                            <div class="btn-group radio-toolbar col-12 col-sm-10" data-toggle="buttons">
+
+                              <label class="btn btn-success active form-check-label">
+                                <input class="form-check-input" type="radio" checked autocomplete="off"> Non-smoking
+                              </label>
+
+                              <label class="btn btn-danger form-check-label">
+                                <input class="form-check-input" type="radio" autocomplete="off"> Smoking
+                              </label>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group row offset-1">
+                            <label for="date" class="col-12 col-xs-12 col-md-2 col-form-label"><strong>Date and time</strong></label>
+                                <div class="col-12 col-md-4">
+                                    <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <input type="text" class="form-control " id="date" name="date" placeholder="Time">
+                            </div>
+                        </div>
+
+                        <div class="form-group row offset-1">
+                            <div class="col-12 col-xs-12 col-md-2 col-form-label offset-md-2">
+                                <button type="submit" class="btn btn-primary">Reserve</button>
+                            </div>
+                            <div class="col-form-label">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -94,9 +200,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a role="button" href="#reservation" type="submit" class="btn btn-sm btn-block nav-link btn-warning"
-                     data-toggle="tooltip" data-html="true" title="Or call us at <br><strong>+852 12345678</strong>"
-                     data-placement="bottom"
+                    <a role="button" href="#reserveModal" data-toggle="modal" type="submit" class="btn btn-sm btn-block nav-link btn-warning"
                      style="background-color: #ffcb15; color:black"><strong>Reserve Table</strong></a>
                 </div>
         </div>
@@ -212,14 +316,14 @@
             </div>
         </div>
 
-        <div id="reservation" class="row row-content">
+        <!-- <div id="reservation" class="row row-content">
             <div class="col-12 col-sm-12 col-md-8 offset-md-2">
                         <div class="card">
                             <h3 class="card-header text-white" style="background-color: #ffcb15;">
                                 Reserve a Table</h3>
                             
                             <div class="card-body">
-                                <!-- <dl class="row"> -->
+                                
                                     <form>
                                         <div class="form-group row offset-1">
                                             <label for="optradio" class="col-12 col-sm-2 col-xs-12 col-form-label"><strong>Number of Guests</strong></label>
@@ -274,11 +378,11 @@
                                             </div>
                                         </div>
                                     </form>
-                                <!-- </dl> -->
+                                
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
     </div>
 
     <footer class="footer">
@@ -326,11 +430,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
         });
-    </script>
+    </script> -->
 </body>
 
 </html>

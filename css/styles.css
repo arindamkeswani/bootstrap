@@ -67,4 +67,5 @@
     left: 0;
     min-height: 300px;
 }
-
+.radio-toolbar input[type="radio"] {
+	display:none;}
