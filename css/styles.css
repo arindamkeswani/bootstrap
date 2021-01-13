@@ -69,3 +69,9 @@
 }
 .radio-toolbar input[type="radio"] {
 	display:none;}
+
+#carouselButton{
+	right:0px;
+	position:absolute;
+	bottom:0px;
+}
