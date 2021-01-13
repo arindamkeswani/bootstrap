@@ -71,7 +71,9 @@
 	display:none;}
 
 #carouselButton{
-	right:0px;
-	position:absolute;
-	bottom:0px;
+	right: 0px;
+	position: absolute;
+	bottom: 0px;
+	z-index: 1;
+	/*width: 50px;*/
 }
